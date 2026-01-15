@@ -2,17 +2,22 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Política de Privacidade - Arcade Studio</title>
-    <style>body{font-family:sans-serif; line-height:1.6; padding:40px; max-width:800px; margin:auto; background:#f4f4f4;}</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Flappy Mario - Arcade Studio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Política de Privacidade</h1>
-    <p>A sua privacidade é importante para nós. Esta política explica como usamos os seus dados (que basicamente são cookies de anúncios).</p>
-    <h2>1. Anúncios</h2>
-    <p>Utilizamos terceiros (como o Google AdSense) para exibir anúncios quando visita o nosso site. Estas empresas podem utilizar cookies para exibir anúncios baseados nas suas visitas anteriores.</p>
-    <h2>2. Cookies</h2>
-    <p>O Google utiliza cookies para servir anúncios no seu site. Pode desativar o uso do cookie DART visitando a política de privacidade da rede de conteúdo e anúncios do Google.</p>
-    <br>
-    <a href="index.html">Voltar ao site</a>
+
+    <a href="../../index.html" class="btn-back">⬅ Voltar ao Arcade Studio</a>
+
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <div id="ui">
+        <span id="score">0</span>
+    </div>
+
+    <script src="game.js"></script>
 </body>
 </html>
