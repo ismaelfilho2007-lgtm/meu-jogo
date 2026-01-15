@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Studio | Meus Jogos Grátis</title>
+    <style>
+        :root { --primary: #ff0000; --bg: #0f0f0f; --card: #1e1e1e; }
+        body { background: var(--bg); color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; }
+        header { background: #000; padding: 20px; text-align: center; border-bottom: 3px solid var(--primary); }
+        
+        /* Espaço para Anúncio Superior */
+        .ad-top { width: 100%; max-width: 728px; height: 90px; background: #222; margin: 20px auto; display: flex; align-items: center; justify-content: center; color: #555; border: 1px dashed #444; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        
+        .game-card { background: var(--card); border-radius: 15px; overflow: hidden; transition: 0.3s; border: 1px solid #333; position: relative; }
+        .game-card:hover { transform: translateY(-10px); border-color: var(--primary); box-shadow: 0 10px 20px rgba(255,0,0,0.2); }
+        .thumb { width: 100%; height: 150px; background: #333; display: flex; align-items: center; justify-content: center; font-size: 40px; }
+        .info { padding: 15px; text-align: center; }
+        .btn-play { background: var(--primary); color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; display: block; margin-top: 10px; }
+        
+        footer { margin-top: 50px; padding: 40px; background: #000; text-align: center; font-size: 14px; color: #888; }
+        .footer-links a { color: #888; margin: 0 10px; text-decoration: none; }
+        .footer-links a:hover { color: white; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🕹️ ARCADE STUDIO</h1>
+    <p>Os melhores jogos em JavaScript e C++</p>
+</header>
+
+<div class="ad-top">Espaço Reservado para Anúncio (AdSense)</div>
+
+<div class="container">
+    <h2>🎮 Meus Jogos</h2>
+    <div class="grid">
+        <div class="game-card">
+            <div class="thumb">🍄</div>
+            <div class="info">
+                <h3>Flappy Mario</h3>
+                <p>Desvia-te dos canos com o Mario neste desafio viciante!</p>
+                <a href="./flappy-mario/index.html" class="btn-play">JOGAR AGORA</a>
+            </div>
+        </div>
+
+        <div class="game-card">
+            <div class="thumb">⚙️</div>
+            <div class="info">
+                <h3>Projeto C++</h3>
+                <p>Em breve: Um jogo de alta performance rodando via WebAssembly.</p>
+                <span style="color: #666;">Em breve</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Arcade Studio - Todos os direitos reservados.</p>
+    <div class="footer-links">
+        <a href="privacidade.html">Política de Privacidade</a> | 
+        <a href="#">Termos de Uso</a> | 
+        <a href="#">Contacto</a>
+    </div>
+</footer>
+
+</body>
+</html>
